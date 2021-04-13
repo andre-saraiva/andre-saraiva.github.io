@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 1.05em;
+	background: #303030 url('../images/canvas-bg.jpg') no-repeat center top;
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+/* page styles */
+
+#header {
+	background: transparent url('../images/header-bg.png') 0 0 repeat;
+	position: absolute;
+	top: 42px;
+	right: 0;
+	padding: 8px;
+	width:100%;
+	height: 40px;
+}
+#intro, #footer, .polaroidStack-polaroidInfo .title {
+	font-family: 'Segoe Print', 'Bradley Hand ITC TT', 'Marker Felt', 'Verdana', sans-serif;
+}
+#intro {
+	position: absolute;
+	margin: 11px;
+	top: 0px;
+	left: 15px;
+}
+#footer {
+	font-size: 0.8em;
+	float: right;
+	position: relative;
+	top: -20px;
+	right: 10px;
+	margin-bottom: -20px;
+}
+
+/* sort button styles */
+
+#sort, #sort-order, #sort-chaos {
+	font-size: 0em;
+}
+#sort {
+	position: relative;
+	top: -11px;
+	text-align: center;
+}
+#sort-order, #sort-chaos {
+	border: 0;
+	width: 50px;
+	height: 50px;
+	background: transparent url('../images/sort-sprite.png') no-repeat left top;
+	cursor: pointer;
+	/* remove IE dotted outline on focus */
+	outline: 0;
+}
+#sort-order {
+	background-position: left top;
+}
+#sort-chaos {
+	background-position: right -50px;
+}
+#sort-order.selected {
+	background-position: left -50px;
+}
+#sort-chaos.selected {
+	background-position: right top;
+}
+#sort-order.disabled, #sort-chaos.disabled, #sort-order.disabledunsel, #sort-chaos.disabledunsel {
+	cursor: auto;
+}
+#sort-order.disabled {
+	background-position: left -150px;
+}
+#sort-chaos.disabled {
+	background-position: right -100px;
+}
+#sort-order.disabledunsel {
+	background-position: left -100px;
+}
+#sort-chaos.disabledunsel {
+	background-position: right -150px;
+}
+
+/* search buttons & field styles */
+
+#search {
+	margin: 8px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+#search-icon, #search-cancel, #search-cancel.hidden {
+	background: transparent url('../images/search-sprite.png') no-repeat left top;
+}
+#search-icon {
+	float: left;
+	height: 22px;
+	width: 25px;
+}
+#search-field {
+	float: left;
+	height: 20px;
+	width: 100px;
+	background: transparent url('../images/search-bg.png') 0 0 repeat;
+	position: relative;
+	margin: 0px;
+	border: 0;
+	/* remove IE dotted outline on focus */
+	outline: none;
+}
+#search-cancel {
+	float: left;
+	height: 22px;
+	width: 22px;
+	cursor: pointer;
+	background-position: right bottom;
+}
+#search-cancel.disabled{
+	background-position: right -22px;
+	cursor: auto;
+}
+
+/* polaroid info styles */
+
+#polaroid-previewer {
+	margin-top: 100px;
+}
+
+.polaroidStack-polaroidInfo, .polaroidStack-polaroidZoom {
+	position: absolute;
+	display: none;
+}
+.polaroidStack-polaroidInfo {
+	font-size: 0.9em;
+	line-height: 1.5;
+	background: transparent url('../images/info-bg.png') 0 0 repeat;
+	width: 300px;
+	padding: 20px 20px 20px 140px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.polaroidStack-polaroidInfo .title {
+	display: block;
+	float: left;
+	width: 90px;
+	font-weight: bold;
+}
+.mail ul a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
